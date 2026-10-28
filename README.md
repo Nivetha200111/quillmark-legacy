@@ -13,7 +13,7 @@ A small legacy estate in the shape banks actually have: COBOL batch programs, sh
 | `jcl/FEESCHD.jcl` | `cobol/FEESCHD.cbl` | FEEIN | CHGOUT | Monthly charges by product: waiver, excess transactions, overdraft interest, cap |
 | `jcl/DAYCTRL.jcl` | `cobol/DAYCTRL.cbl` | DAYIN | CTLOUT | Daily interest with a running general-ledger control total |
 
-Record layouts are in `copybooks/`. The programs contain the quirks real ones do: `COMPUTE ROUNDED` rounds half away from zero, `COMPUTE` without it truncates, fields silently lose high-order digits on overflow, and `PIC 9(7) COMP` counters DISPLAY as ten digits.
+Record layouts are in `copybooks/`. The programs contain the quirks real ones do: `COMPUTE ROUNDED` rounds half away from zero, `COMPUTE` without it truncates, and fields silently lose high-order digits on overflow.
 
 ## Data estate
 
